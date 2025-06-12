@@ -1,0 +1,125 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e6f7ff; /* Light blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Container for the swap interface */
+.swap-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header */
+.swap-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swap-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Connect Wallet button */
+.connect-button {
+  padding: 8px 16px;
+  background-color: #1a94ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.connect-button:hover {
+  background-color: #1680d6;
+}
+
+/* The main swap form */
+.swap-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.token-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.token-select label {
+  font-weight: 600;
+}
+
+.token-select select,
+.token-select input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  margin-left: 8px;
+}
+
+/* Swap button */
+.swap-button {
+  padding: 12px 16px;
+  background-color: #34c759;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.swap-button:hover {
+  background-color: #2ba045;
+}
+
+/* Info or slippage settings area */
+.info-section {
+  font-size: 0.875rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slippage-settings {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.slippage-settings input {
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  outline: none;
+}
